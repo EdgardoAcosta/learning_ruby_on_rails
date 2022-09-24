@@ -1,8 +1,8 @@
-<% if @article.errors.any? %>
+<% if obj.errors.any? %>
   <div class="row justify-content-center">
     <div id="error_explanation" class="col-10 alert alert-danger alert-dismissible fade show" role="alert">
       <h2>
-        <%= pluralize(@article.errors.count, "error" ) %> prohibited this article from being saved:
+        <%= pluralize(obj.errors.count, "error" ) %> prohibited this article from being saved:
       </h2>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       <ul>
